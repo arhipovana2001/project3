@@ -3,6 +3,7 @@ import turtle
 
 ANIMATION_SPEED = 0
 COLORS = ['red', 'purple', 'blue', 'green']
+size = 50
 
 turtle.speed(ANIMATION_SPEED)
 turtle.hideturtle()
@@ -13,10 +14,8 @@ def sq(a):
         turtle.forward(a)
         turtle.left(90)
 
-b = 50
-
 for i in range(60):
-    sq(b)
+    sq(size)
     turtle.right(10)
-    b = b+5
+    size = size+5
 turtle.done()
